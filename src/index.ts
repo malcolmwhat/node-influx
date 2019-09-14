@@ -1206,7 +1206,7 @@ export class InfluxDB {
 	public writePoints(points: IPoint[], options: IWriteOptions = {}): Promise<void> {
 		const {
 			database = this._defaultDB(),
-			precision = 'n' as grammar.TimePrecision,
+			precision = 'ms' as grammar.TimePrecision,
 			retentionPolicy
 		} = options;
 
